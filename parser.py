@@ -1,8 +1,8 @@
 from abc import ABC, abstractclassmethod
 
 
-class Parser():
+class Parser(ABC):
 
     @abstractclassmethod
-    def request(self, text: str) -> None:
+    def request(self, text: str) -> str:
         pass
